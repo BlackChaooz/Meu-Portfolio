@@ -110,6 +110,43 @@ img{
     gap: 30px;
 }
 /* # section */
+.section-padding{
+    padding: 60px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom:  45px;
+}
+.section-title .title{
+    display: inline-block;
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin: 0 0 12px;
+    padding: 0 40px;
+    position: relative;
+}
+.section-title .title::before,
+.section-title .title::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 34px;
+    background-color: var(--main-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section-title .title::before{
+    left: 0;
+}
+.section-title .title::after{
+    right: 0;
+}
+.section-title .sub-titl{
+    font-size: var(--fs-3x1);
+    text-transform: capitalize;
+}
 /* # buttons */
 .btn{
     display: inline-block;
@@ -222,8 +259,16 @@ img{
 }
 
 
-
 /* #  about */
+.about .section-title{
+    text-align: center;
+    margin: 0 0 15px;
+
+}
+.about-text{
+    grid-column: span 18; 
+    text-align: justify;  
+}
 /* #  services */
 /* #  pricing */
 /* #  team */
