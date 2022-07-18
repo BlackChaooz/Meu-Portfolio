@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /* # variables */
 :root{
-    --hue: 270;
+    --hue: 260;
     --saturation: 70%;
     --lightness: 55%;
     --main-color: hsl(var(--hue), var(--saturation),var(--lightness));
@@ -247,10 +247,16 @@ p{
 .home-text h1{
     font-size: var(--fs-4x1);
     margin: 0 0 20px;
-    text-transform: capitalize;
+    text-transform: capitalize;  
 }
 .home-text p{
     margin: 0 0 30px;
+}
+.home-img {
+    transition:  transform 0.5s ease;
+}
+.home-img:hover {
+    transform: scale(1.2);
 }
 
 
@@ -321,7 +327,44 @@ p{
     padding-block: 30px;
 }
 
+/* # sociais */
+.sociais-item{
+    grid-column: span 4;
+    text-align: center;
+}
 
+.sociais-item .img-box{
+    padding: 50px;
+    text-align: center;
+    padding: 8px;
+    overflow: hidden;
+}
+.sociais-item .img-box{
+    transition:  transform 0.5s ease;
+}
+.sociais-item:hover .img-box{
+    transform: scale(1.2);
+}
+.sociais-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.sociais-item h3{
+    text-transform: capitalize;
+    font-size: var(--fs-xl);
+    font-weight: 500;
+    padding: 0;
+    align-items: center;
+    padding-top: 40px;
+}
+.sociais-item .details{
+    margin: -42px auto 0;
+    width: 85%;
+    padding: 15px;
+    text-transform:capitaliz;
+    position: relative;
+     z-index: 1;
+}
 
 /* #  contact* /
 /* #  footer */
