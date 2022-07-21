@@ -102,7 +102,7 @@ p{
 .grid{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    gap: 30px;
+    gap: 30px;    
 }
 /* # section */
 .section-padding{
@@ -331,6 +331,7 @@ p{
 .sociais-item{
     grid-column: span 4;
     text-align: center;
+    align-items: center;
 }
 
 .sociais-item .img-box{
